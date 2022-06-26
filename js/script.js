@@ -196,6 +196,11 @@ a = 5;
 
 console.log(a);
 
+let hotr = 15;
+
+console.log(hort);
+
+
 // lesson 11
 
 
