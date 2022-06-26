@@ -196,6 +196,10 @@ a = 5;
 
 console.log(a);
 
+let wreo;
+
+console.log(wreo);
+
 // lesson 11
 
 
