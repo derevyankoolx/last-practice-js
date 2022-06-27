@@ -203,6 +203,11 @@
 
 
 
+let hotr = 15;
+
+console.log(hort);
+
+
 // lesson 11
 
 
