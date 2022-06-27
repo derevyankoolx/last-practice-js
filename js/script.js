@@ -196,9 +196,15 @@ a = 5;
 
 console.log(a);
 
+<<<<<<< HEAD
 let hotr = 15;
 
 console.log(hort);
+=======
+let wreo;
+
+console.log(wreo);
+>>>>>>> master
 
 
 // lesson 11
