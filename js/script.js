@@ -203,9 +203,9 @@
 
 
 
-let hotr = 15;
+// let hotr = 15;
 
-console.log(hort);
+// console.log(hort);
 
 
 // lesson 11
@@ -220,54 +220,97 @@ const personalMovieDB = {
     genres: [],
     privat: false
 };
-
-
 const a = prompt('Один из последних просмотренных фильмов?', ''),
-      b = ('На сколько оцените его',''),
-      c = ('Один из последних просмотренных фильмов', ''),
-      d = ('На сколько оцените его','');
-
+      b = prompt('На сколько оцените его',''),
+      c = prompt('Один из последних просмотренных фильмов', ''),
+      d = prompt('На сколько оцените его','');
 
 personalMovieDB.movies.a = b;
 personalMovieDB.movies.c = d;
 
-console.log(personalMovieDB);
+// for(let i = 0; i < 2; i++) {
+//     const a = prompt('Один из последних просмотренных фильмов?', ''),
+//           b = prompt('На сколько оцените его','');
+
+//     if (a != null && b != null && a != '' && b !='' && a.length < 50) {
+//         personalMovieDB.movies[a] = b;
+//         console.log('done');
+//     } else {
+//         console.log('error');
+//         i--;
+//     }
+// }
+
+// do{
+//     console.log(a);
+//     personalMovieDB.count < 10;
+// }
+// while (n <= 55);
 
 
 
 
 
+// let i = 0; i++;
+// do {
+//     const a = prompt('Один из последних просмотренных фильмов?', '');
+// } while (i < 2);
+
+//     do (a != null && b != null && a != '' && b !='' && a.length < 50); {
+//     }  
+//     while {
+//         console.log(personalMovieDB.movies[a] = b);
+//         }
+
+
+// for(let i = 0; i < 2; i++) {
+//     const a = prompt('Один из последних просмотренных фильмов?', ''),
+//           b = prompt('На сколько оцените его','');
+
+
+//     if (a != null && b != null && a != '' && b !='' && a.length < 50) {
+//         personalMovieDB.movies[a] = b;
+//         console.log('done');
+//     } else {
+//         console.log('error');
+//         i--;
+//     }
+// }
 
 
 
-if (1) {
-    console.log('Ok!');
-}  else {
-    console.log('Error');
-}
-
-const num = 50;
-if(num < 49) {
-    console.log('Error');
-}   else if (num > 100){
-    console.log('Много');
-} else {
-    console.log('Ok');
-}
-
-(num == 50) ? console.log("Ok") : console.log('Error');
-
-
-
-// lesson 12
-
-
-if (1) {
-    console.log('Ok!');
+if(personalMovieDB.count < 10) {
+    console.log('Просмотренно довольно мало фильмов');
+}   else if (personalMovieDB.count >=  10 && personalMovieDB.count < 30) {
+    console.log('Вы класический зритель');
+}   else if (personalMovieDB.count >= 30) {
+    console.log('Вы киноман');
 }   else {
-    console.log('Error');
-}
+    console.log('Произошла ошибка');
+} 
 
+console.log(personalMovieDB);
+// if (1) {
+//     console.log('Ok!');
+// }  else {
+//     console.log('Error');
+// }
+// const num = 50;
+// if(num < 49) {
+//     console.log('Error');
+// }   else if (num > 100){
+//     console.log('Много');
+// } else {
+//     console.log('Ok');
+// }
+// (num == 50) ? console.log("Ok") : console.log('Error');
+// // lesson 12
+
+// if (1) {
+//     console.log('Ok!');
+// }   else {
+//     console.log('Error');
+// }
 
 // if(number < 49) {
 //     console.log('Error');
@@ -281,20 +324,20 @@ if (1) {
 
 // const number = 50;
 
-switch(number) {
-    case 49:
-        console.log('Неверно');
-        break;
-    case 100:
-        console.log('Неверно');
-        break;
-    case 50:
-        console.log('В точку');
-        break;
-    default:
-        console.log('Не в этот раз');
-        break;
-}
+// switch(number) {
+//     case 49:
+//         console.log('Неверно');
+//         break;
+//     case 100:
+//         console.log('Неверно');
+//         break;
+//     case 50:
+//         console.log('В точку');
+//         break;
+//     default:
+//         console.log('Не в этот раз');
+//         break;
+// }
 
 // lesson 13 ЦИКЛЫ
 
@@ -319,33 +362,32 @@ switch(number) {
 //         continue;
 //     }
 //     console.log(i);
-
 // }
 
 
 
-let s = 50;
+// let s = 50;
 
-while(s <= 55) {
-    console.log(s);
-    s++;
-}
+// while(s <= 55) {
+//     console.log(s);
+//     s++;
+// }
 
-do {
-    console.log(s);
-    s++;
-}
-while(s < 55);
+// do {
+//     console.log(s);
+//     s++;
+// }
+// while(s < 55);
 
-for(let i = 1; i < 8; i++) {
-    if(i == 6) {
-        // break;
-        continue;
-    }
+// for(let i = 1; i < 8; i++) {
+//     if(i == 6) {
+//         // break;
+//         continue;
+//     }
 
-    console.log(i);
-    s++;
-}
+//     console.log(i);
+//     s++;
+// }
 
 
 
