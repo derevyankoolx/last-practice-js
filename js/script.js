@@ -279,7 +279,7 @@ if (1) {
 
 // (number === 50) ? console.log('Ok!') : console.log('Error');
 
-const number = 50;
+// const number = 50;
 
 switch(number) {
     case 49:
@@ -296,10 +296,66 @@ switch(number) {
         break;
 }
 
-// lesson 13
+// lesson 13 ЦИКЛЫ
+
+
+
+// while (n <= 55) {
+//     console.log(n); ----------- цикл while 
+//     n++;
+// }
+
+// do{
+//     console.log(n);
+//     n++;
+// }
+// while (n <= 55);
+
+// let n = 50;
+
+// for (let i = 1; i < 10; i++) {
+//     if(i === 6) {
+//         break;
+//         continue;
+//     }
+//     console.log(i);
+
+// }
+
+
+
+let s = 50;
+
+while(s <= 55) {
+    console.log(s);
+    s++;
+}
+
+do {
+    console.log(s);
+    s++;
+}
+while(s < 55);
+
+for(let i = 1; i < 8; i++) {
+    if(i == 6) {
+        // break;
+        continue;
+    }
+
+    console.log(i);
+    s++;
+}
+
+
+
 
 
 // lesson 14
+
+
+
+
 
 
 // lesson 15
