@@ -1,0 +1,233 @@
+[33mcommit 4a1e99c815a6828b98118ef9a4ecd91a9471e9ea[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Olexander Derevianko <derevyankoolx@gmail.com>
+Date:   Mon Jun 27 18:49:09 2022 +0300
+
+    practice circle
+
+[1mdiff --git a/js/script.js b/js/script.js[m
+[1mindex e65d0c8..765881d 100644[m
+[1m--- a/js/script.js[m
+[1m+++ b/js/script.js[m
+[36m@@ -203,9 +203,9 @@[m
+ [m
+ [m
+ [m
+[31m-let hotr = 15;[m
+[32m+[m[32m// let hotr = 15;[m
+ [m
+[31m-console.log(hort);[m
+[32m+[m[32m// console.log(hort);[m
+ [m
+ [m
+ // lesson 11[m
+[36m@@ -220,54 +220,97 @@[m [mconst personalMovieDB = {[m
+     genres: [],[m
+     privat: false[m
+ };[m
+[31m-[m
+[31m-[m
+ const a = prompt('Один из последних просмотренных фильмов?', ''),[m
+[31m-      b = ('На сколько оцените его',''),[m
+[31m-      c = ('Один из последних просмотренных фильмов', ''),[m
+[31m-      d = ('На сколько оцените его','');[m
+[31m-[m
+[32m+[m[32m      b = prompt('На сколько оцените его',''),[m
+[32m+[m[32m      c = prompt('Один из последних просмотренных фильмов', ''),[m
+[32m+[m[32m      d = prompt('На сколько оцените его','');[m
+ [m
+ personalMovieDB.movies.a = b;[m
+ personalMovieDB.movies.c = d;[m
+ [m
+[31m-console.log(personalMovieDB);[m
+[32m+[m[32m// for(let i = 0; i < 2; i++) {[m
+[32m+[m[32m//     const a = prompt('Один из последних просмотренных фильмов?', ''),[m
+[32m+[m[32m//           b = prompt('На сколько оцените его','');[m
+ [m
+[32m+[m[32m//     if (a != null && b != null && a != '' && b !='' && a.length < 50) {[m
+[32m+[m[32m//         personalMovieDB.movies[a] = b;[m
+[32m+[m[32m//         console.log('done');[m
+[32m+[m[32m//     } else {[m
+[32m+[m[32m//         console.log('error');[m
+[32m+[m[32m//         i--;[m
+[32m+[m[32m//     }[m
+[32m+[m[32m// }[m
+ [m
+[32m+[m[32m// do{[m
+[32m+[m[32m//     console.log(a);[m
+[32m+[m[32m//     personalMovieDB.count < 10;[m
+[32m+[m[32m// }[m
+[32m+[m[32m// while (n <= 55);[m
+ [m
+ [m
+ [m
+ [m
+ [m
+[32m+[m[32m// let i = 0; i++;[m
+[32m+[m[32m// do {[m
+[32m+[m[32m//     const a = prompt('Один из последних просмотренных фильмов?', '');[m
+[32m+[m[32m// } while (i < 2);[m
+ [m
+[31m-if (1) {[m
+[31m-    console.log('Ok!');[m
+[31m-}  else {[m
+[31m-    console.log('Error');[m
+[31m-}[m
+[32m+[m[32m//     do (a != null && b != null && a != '' && b !='' && a.length < 50); {[m
+[32m+[m[32m//     }[m[41m  [m
+[32m+[m[32m//     while {[m
+[32m+[m[32m//         console.log(personalMovieDB.movies[a] = b);[m
+[32m+[m[32m//         }[m
+ [m
+[31m-const num = 50;[m
+[31m-if(num < 49) {[m
+[31m-    console.log('Error');[m
+[31m-}   else if (num > 100){[m
+[31m-    console.log('Много');[m
+[31m-} else {[m
+[31m-    console.log('Ok');[m
+[31m-}[m
+ [m
+[31m-(num == 50) ? console.log("Ok") : console.log('Error');[m
+[32m+[m[32m// for(let i = 0; i < 2; i++) {[m
+[32m+[m[32m//     const a = prompt('Один из последних просмотренных фильмов?', ''),[m
+[32m+[m[32m//           b = prompt('На сколько оцените его','');[m
+ [m
+ [m
+[32m+[m[32m//     if (a != null && b != null && a != '' && b !='' && a.length < 50) {[m
+[32m+[m[32m//         personalMovieDB.movies[a] = b;[m
+[32m+[m[32m//         console.log('done');[m
+[32m+[m[32m//     } else {[m
+[32m+[m[32m//         console.log('error');[m
+[32m+[m[32m//         i--;[m
+[32m+[m[32m//     }[m
+[32m+[m[32m// }[m
+ [m
+[31m-// lesson 12[m
+ [m
+ [m
+[31m-if (1) {[m
+[31m-    console.log('Ok!');[m
+[32m+[m[32mif(personalMovieDB.count < 10) {[m
+[32m+[m[32m    console.log('Просмотренно довольно мало фильмов');[m
+[32m+[m[32m}   else if (personalMovieDB.count >=  10 && personalMovieDB.count < 30) {[m
+[32m+[m[32m    console.log('Вы класический зритель');[m
+[32m+[m[32m}   else if (personalMovieDB.count >= 30) {[m
+[32m+[m[32m    console.log('Вы киноман');[m
+ }   else {[m
+[31m-    console.log('Error');[m
+[31m-}[m
+[32m+[m[32m    console.log('Произошла ошибка');[m
+[32m+[m[32m}[m[41m [m
+ [m
+[32m+[m[32mconsole.log(personalMovieDB);[m
+[32m+[m[32m// if (1) {[m
+[32m+[m[32m//     console.log('Ok!');[m
+[32m+[m[32m// }  else {[m
+[32m+[m[32m//     console.log('Error');[m
+[32m+[m[32m// }[m
+[32m+[m[32m// const num = 50;[m
+[32m+[m[32m// if(num < 49) {[m
+[32m+[m[32m//     console.log('Error');[m
+[32m+[m[32m// }   else if (num > 100){[m
+[32m+[m[32m//     console.log('Много');[m
+[32m+[m[32m// } else {[m
+[32m+[m[32m//     console.log('Ok');[m
+[32m+[m[32m// }[m
+[32m+[m[32m// (num == 50) ? console.log("Ok") : console.log('Error');[m
+[32m+[m[32m// // lesson 12[m
+[32m+[m
+[32m+[m[32m// if (1) {[m
+[32m+[m[32m//     console.log('Ok!');[m
+[32m+[m[32m// }   else {[m
+[32m+[m[32m//     console.log('Error');[m
+[32m+[m[32m// }[m
+ [m
+ // if(number < 49) {[m
+ //     console.log('Error');[m
+[36m@@ -281,20 +324,20 @@[m [mif (1) {[m
+ [m
+ // const number = 50;[m
+ [m
+[31m-switch(number) {[m
+[31m-    case 49:[m
+[31m-        console.log('Неверно');[m
+[31m-        break;[m
+[31m-    case 100:[m
+[31m-        console.log('Неверно');[m
+[31m-        break;[m
+[31m-    case 50:[m
+[31m-        console.log('В точку');[m
+[31m-        break;[m
+[31m-    default:[m
+[31m-        console.log('Не в этот раз');[m
+[31m-        break;[m
+[31m-}[m
+[32m+[m[32m// switch(number) {[m
+[32m+[m[32m//     case 49:[m
+[32m+[m[32m//         console.log('Неверно');[m
+[32m+[m[32m//         break;[m
+[32m+[m[32m//     case 100:[m
+[32m+[m[32m//         console.log('Неверно');[m
+[32m+[m[32m//         break;[m
+[32m+[m[32m//     case 50:[m
+[32m+[m[32m//         console.log('В точку');[m
+[32m+[m[32m//         break;[m
+[32m+[m[32m//     default:[m
+[32m+[m[32m//         console.log('Не в этот раз');[m
+[32m+[m[32m//         break;[m
+[32m+[m[32m// }[m
+ [m
+ // lesson 13 ЦИКЛЫ[m
+ [m
+[36m@@ -319,33 +362,32 @@[m [mswitch(number) {[m
+ //         continue;[m
+ //     }[m
+ //     console.log(i);[m
+[31m-[m
+ // }[m
+ [m
+ [m
+ [m
+[31m-let s = 50;[m
+[32m+[m[32m// let s = 50;[m
+ [m
+[31m-while(s <= 55) {[m
+[31m-    console.log(s);[m
+[31m-    s++;[m
+[31m-}[m
+[32m+[m[32m// while(s <= 55) {[m
+[32m+[m[32m//     console.log(s);[m
+[32m+[m[32m//     s++;[m
+[32m+[m[32m// }[m
+ [m
+[31m-do {[m
+[31m-    console.log(s);[m
+[31m-    s++;[m
+[31m-}[m
+[31m-while(s < 55);[m
+[32m+[m[32m// do {[m
+[32m+[m[32m//     console.log(s);[m
+[32m+[m[32m//     s++;[m
+[32m+[m[32m// }[m
+[32m+[m[32m// while(s < 55);[m
+ [m
+[31m-for(let i = 1; i < 8; i++) {[m
+[31m-    if(i == 6) {[m
+[31m-        // break;[m
+[31m-        continue;[m
+[31m-    }[m
+[32m+[m[32m// for(let i = 1; i < 8; i++) {[m
+[32m+[m[32m//     if(i == 6) {[m
+[32m+[m[32m//         // break;[m
+[32m+[m[32m//         continue;[m
+[32m+[m[32m//     }[m
+ [m
+[31m-    console.log(i);[m
+[31m-    s++;[m
+[31m-}[m
+[32m+[m[32m//     console.log(i);[m
+[32m+[m[32m//     s++;[m
+[32m+[m[32m// }[m
+ [m
+ [m
+ [m
